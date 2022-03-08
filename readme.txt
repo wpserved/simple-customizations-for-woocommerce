@@ -23,14 +23,14 @@ On the installed plugins list there is a shortcut to settings or you can navigat
 
 == Changelog ==
 
-= 0.0.1 2021-10-21 =
+= 1.0.0 2022-03-08
 
-* First plugin BETA release
+* First "full" release
 
 = 0.0.2 2021-12-10 =
 
 * Add toggle switchers in settings and use them
 
-= 1.0.0 2022-03-08
+= 0.0.1 2021-10-21 =
 
-* First "full" release
+* First plugin BETA release
