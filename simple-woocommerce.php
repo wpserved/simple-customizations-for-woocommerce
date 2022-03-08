@@ -1,12 +1,12 @@
 <?php
 /**
- * Plugin Name: Simple WooCommerce
+ * Plugin Name: Simple Woo
  * Plugin URI: https://wpserved.com/plugins
  * Description: Simplify your WooCommerce store easily!
  * Version: 1.0.0
  * Author: wpserved
  * Author URI: https://wpserved.com/
- * Text Domain: simple-woocommerce
+ * Text Domain: simple-woo
  * Domain Path: /resources/lang
  * Requires at least: 5.8
  * Requires PHP: 7.4
