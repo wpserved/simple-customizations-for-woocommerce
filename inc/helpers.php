@@ -1,18 +1,18 @@
 <?php
 
-namespace SimpleWooCommerce;
+namespace SimpleCustomizationsForWooCommerce;
 
-use SimpleWooCommerce\Init;
-use SimpleWooCommerce\Core\DocHooks;
+use SimpleCustomizationsForWooCommerce\Init;
+use SimpleCustomizationsForWooCommerce\Core\DocHooks;
 
-if (! function_exists('SimpleWooCommerce\\swcDoc')) {
+if (! function_exists('SimpleCustomizationsForWooCommerce\\swcDoc')) {
   function swcDoc()
   {
     return DocHooks::get();
   }
 }
 
-if (! function_exists('SimpleWooCommerce\\swc')) {
+if (! function_exists('SimpleCustomizationsForWooCommerce\\swc')) {
   function swc(string $moduleName = '')
   {
     $modules = Init::get();
@@ -20,13 +20,13 @@ if (! function_exists('SimpleWooCommerce\\swc')) {
       return $modules;
     }
     if (! array_key_exists($moduleName, $modules->public)) {
-      throw new \Exception(sprintf(__('Module %1$s doesn\'t exists!', 'simple-woocommerce'), $moduleName));
+      throw new \Exception(sprintf(__('Module %1$s doesn\'t exists!', 'simple-customizations-for-woocommerce'), $moduleName));
     }
     return $modules->public[$moduleName];
   }
 }
 
-if (! function_exists('SimpleWooCommerce\\createClass')) {
+if (! function_exists('SimpleCustomizationsForWooCommerce\\createClass')) {
   /**
    * Create instance of Class
    *

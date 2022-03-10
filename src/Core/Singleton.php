@@ -1,6 +1,6 @@
 <?php
 
-namespace SimpleWooCommerce\Core;
+namespace SimpleCustomizationsForWooCommerce\Core;
 
 abstract class Singleton
 {

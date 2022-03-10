@@ -1,6 +1,6 @@
 <?php
 
-namespace SimpleWooCommerce\ProductList;
+namespace SimpleCustomizationsForWooCommerce\ProductList;
 
 class ProductList
 {

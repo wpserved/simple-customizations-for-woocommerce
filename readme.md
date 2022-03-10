@@ -1,10 +1,10 @@
-# Simple Woo
+# Simple Customizations for WooCommerce
 
 ## Description
-Simple Woo lets you customize your store from admin dashboard instead of digging into code.
+Simple Customizations for WooCommerce lets you customize your store from admin dashboard instead of digging into code.
 
 ## How it works
-Woo lets you easily sell products or services online. A plugin allows you to create a working e-commerce store with basic features, however customizing your store to your preferences may require coding skills. This is why the Simple Woo plugin can help you - we've made the most requested changes that aren't available in the settings. That way, you can easily select the functions you want from the menu instead of digging into the code.
+Woo lets you easily sell products or services online. A plugin allows you to create a working e-commerce store with basic features, however customizing your store to your preferences may require coding skills. This is why the Simple Customizations for WooCommerce plugin can help you - we've made the most requested changes that aren't available in the settings. That way, you can easily select the functions you want from the menu instead of digging into the code.
 
 ## Functionalities
 * Hiding breadcrumbs;
@@ -29,8 +29,8 @@ Woo lets you easily sell products or services online. A plugin allows you to cre
 Automatic install from WordPress Dashboard
 
 1. Click on Plugins → Add New;
-2. Search for "Simple Woo" using the top right searchbox;
+2. Search for "Simple Customizations for WooCommerce" using the top right searchbox;
 3. Click on the Install Now button;
 4. Click on Activate;
-5. Go to WooCommerce -> Settings → Simple WooCommerce and customize behaviour as needed.
+5. Go to WooCommerce -> Settings → Simple Customizations for WooCommerce and customize behaviour as needed.
 

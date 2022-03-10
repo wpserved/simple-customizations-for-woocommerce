@@ -1,6 +1,6 @@
 <?php
 
-namespace SimpleWooCommerce\Breadcrumbs;
+namespace SimpleCustomizationsForWooCommerce\Breadcrumbs;
 
 class Breadcrumbs
 {

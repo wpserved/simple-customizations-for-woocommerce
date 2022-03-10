@@ -1,6 +1,6 @@
 <?php
 
-namespace SimpleWooCommerce\Settings\Fields;
+namespace SimpleCustomizationsForWooCommerce\Settings\Fields;
 
 use WC_Admin_Settings;
 
@@ -21,7 +21,7 @@ class Toggle
 
     if (! empty($value['custom_attributes']) && is_array($value['custom_attributes'])) {
       foreach ($value['custom_attributes'] as $attribute => $attribute_value) {
-        $custom_attributes[] = esc_attr($attribute) . '="' . esc_attr($attribute_value) . '"';
+        $custom_attributes[] = $attribute . '="' . $attribute_value . '"';
       }
     }
 
@@ -72,9 +72,9 @@ class Toggle
           class="<?php echo esc_attr(isset($data['class']) ? $data['class'] : ''); ?>"
           value="1"
           <?php checked($option_value, 'yes'); ?>
-          <?php echo implode(' ', $custom_attributes); //no need to escape - follow var above ?>
-        /> <span class="switch-slider <?php echo esc_attr(isset($data['toggle_type']) && 'round' === $data['toggle_type'] ? 'round' : ''); ?>"></span> <?php echo $description; //no need to escape - follow var above ?>
-      </label> <?php echo $tooltip_html; //no need to escape - follow var above ?>
+          <?php echo esc_attr(implode(' ', $custom_attributes)); ?>
+        /> <span class="switch-slider <?php echo esc_attr(isset($data['toggle_type']) && 'round' === $data['toggle_type'] ? 'round' : ''); ?>"></span> <?php echo wp_kses($description, array('p' => array('class'=>array()))); ?>
+      </label> <?php echo esc_html($tooltip_html); ?>
     <?php
 
     if (! isset($data['checkboxgroup']) || 'end' === $data['checkboxgroup']) {

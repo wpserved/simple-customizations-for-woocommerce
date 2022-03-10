@@ -1,8 +1,8 @@
 <?php
 
-namespace SimpleWooCommerce;
+namespace SimpleCustomizationsForWooCommerce;
 
-use SimpleWooCommerce\Core\Singleton;
+use SimpleCustomizationsForWooCommerce\Core\Singleton;
 
 class Init extends Singleton
 {
@@ -22,7 +22,7 @@ class Init extends Singleton
 
   private function addPublic(string $name, string $label = ''): void
   {
-    $class = 'SimpleWooCommerce\\' . $name;
+    $class = 'SimpleCustomizationsForWooCommerce\\' . $name;
     $index = ! empty($label) ? $label : $name;
     $this->public[$index] = new $class();
     swcDoc()->addDocHooks($this->public[$index]);
@@ -30,7 +30,7 @@ class Init extends Singleton
 
   private function addPrivate(string $name, string $label = ''): void
   {
-    $class = 'SimpleWooCommerce\\' . $name;
+    $class = 'SimpleCustomizationsForWooCommerce\\' . $name;
     $index = ! empty($label) ? $label : $name;
     $this->private[$index] = new $class();
     swcDoc()->addDocHooks($this->private[$index]);

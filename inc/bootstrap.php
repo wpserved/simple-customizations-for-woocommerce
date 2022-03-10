@@ -1,8 +1,8 @@
 <?php
 
-require SIMPLE_WOOCOMMERCE_ROOT_PATH . '/vendor/autoload.php';
+require SCW_ROOT_PATH . '/vendor/autoload.php';
 
-if (! function_exists('swcDoc') && function_exists('SimpleWooCommerce\\swcDoc')) {
+if (! function_exists('swcDoc') && function_exists('SimpleCustomizationsForWooCommerce\\swcDoc')) {
   /**
    * Initialize swcDoc() function.
    *
@@ -10,11 +10,11 @@ if (! function_exists('swcDoc') && function_exists('SimpleWooCommerce\\swcDoc'))
    */
   function swcDoc(): object
   {
-    return SimpleWooCommerce\swcDoc();
+    return SimpleCustomizationsForWooCommerce\swcDoc();
   }
 }
 
-if (! function_exists('swc') && function_exists('SimpleWooCommerce\\swc')) {
+if (! function_exists('swc') && function_exists('SimpleCustomizationsForWooCommerce\\swc')) {
   /**
    * Initialize swc() function.
    *
@@ -23,11 +23,11 @@ if (! function_exists('swc') && function_exists('SimpleWooCommerce\\swc')) {
    */
   function swc(string $moduleName = ''): object
   {
-    return SimpleWooCommerce\swc($moduleName);
+    return SimpleCustomizationsForWooCommerce\swc($moduleName);
   }
 }
 
-if (! function_exists('createClass') && function_exists('SimpleWooCommerce\\createClass')) {
+if (! function_exists('createClass') && function_exists('SimpleCustomizationsForWooCommerce\\createClass')) {
   /**
    * Initialize createClass() function.
    *

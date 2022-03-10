@@ -1,6 +1,6 @@
 <?php
 
-namespace SimpleWooCommerce\Product;
+namespace SimpleCustomizationsForWooCommerce\Product;
 
 use WC_Product_Simple;
 

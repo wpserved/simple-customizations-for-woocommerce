@@ -1,6 +1,6 @@
 <?php
 
-namespace SimpleWooCommerce\Settings\Sections;
+namespace SimpleCustomizationsForWooCommerce\Settings\Sections;
 
 interface SectionAccess
 {

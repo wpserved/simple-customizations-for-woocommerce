@@ -1,8 +1,8 @@
 <?php
 
-namespace SimpleWooCommerce\Core;
+namespace SimpleCustomizationsForWooCommerce\Core;
 
-use SimpleWooCommerce\Product\Product;
+use SimpleCustomizationsForWooCommerce\Product\Product;
 
 class Config
 {
@@ -11,7 +11,7 @@ class Config
    */
   public function initConfig(): void
   {
-    load_textdomain('simple-woocommerce', SIMPLE_WOOCOMMERCE_RESOURCES_PATH . '/lang/' . get_locale() . '.mo');
+    load_textdomain('simple-customizations-for-woocommerce', SCW_RESOURCES_PATH . '/lang/' . get_locale() . '.mo');
   }
 
   /**
@@ -21,12 +21,12 @@ class Config
   {
     $version = 'production' === wp_get_environment_type() ? null : time();
 
-    wp_enqueue_style('simple-woocommerce/front.css', SIMPLE_WOOCOMMERCE_ASSETS_URI . '/styles/front.css', false, $version);
-    wp_enqueue_script('simple-woocommerce/manifest.js', SIMPLE_WOOCOMMERCE_ASSETS_URI . '/scripts/manifest.js', ['jquery'], $version, true);
-    wp_enqueue_script('simple-woocommerce/vendor.js', SIMPLE_WOOCOMMERCE_ASSETS_URI . '/scripts/vendor.js', ['simple-woocommerce/manifest.js'], $version, true);
-    wp_enqueue_script('simple-woocommerce/front.js', SIMPLE_WOOCOMMERCE_ASSETS_URI . '/scripts/front.js', ['simple-woocommerce/manifest.js'], $version, true);
+    wp_enqueue_style('simple-customizations-for-woocommerce/front.css', SCW_ASSETS_URI . '/styles/front.css', false, $version);
+    wp_enqueue_script('simple-customizations-for-woocommerce/manifest.js', SCW_ASSETS_URI . '/scripts/manifest.js', ['jquery'], $version, true);
+    wp_enqueue_script('simple-customizations-for-woocommerce/vendor.js', SCW_ASSETS_URI . '/scripts/vendor.js', ['simple-customizations-for-woocommerce/manifest.js'], $version, true);
+    wp_enqueue_script('simple-customizations-for-woocommerce/front.js', SCW_ASSETS_URI . '/scripts/front.js', ['simple-customizations-for-woocommerce/manifest.js'], $version, true);
 
-    wp_localize_script('simple-woocommerce/front.js', 'swc', [
+    wp_localize_script('simple-customizations-for-woocommerce/front.js', 'swc', [
       'ajax' => admin_url('admin-ajax.php'),
     ]);
   }
@@ -38,18 +38,18 @@ class Config
   {
     $version = 'production' === wp_get_environment_type() ? null : time();
 
-    wp_enqueue_style('simple-woocommerce/admin.css', SIMPLE_WOOCOMMERCE_ASSETS_URI . '/styles/admin.css', false, $version);
-    wp_enqueue_script('simple-woocommerce/manifest.js', SIMPLE_WOOCOMMERCE_ASSETS_URI . '/scripts/manifest.js', ['jquery'], $version, true);
-    wp_enqueue_script('simple-woocommerce/vendor.js', SIMPLE_WOOCOMMERCE_ASSETS_URI . '/scripts/vendor.js', ['simple-woocommerce/manifest.js'], $version, true);
-    wp_enqueue_script('simple-woocommerce/admin.js', SIMPLE_WOOCOMMERCE_ASSETS_URI . '/scripts/admin.js', ['simple-woocommerce/manifest.js'], $version, true);
+    wp_enqueue_style('simple-customizations-for-woocommerce/admin.css', SCW_ASSETS_URI . '/styles/admin.css', false, $version);
+    wp_enqueue_script('simple-customizations-for-woocommerce/manifest.js', SCW_ASSETS_URI . '/scripts/manifest.js', ['jquery'], $version, true);
+    wp_enqueue_script('simple-customizations-for-woocommerce/vendor.js', SCW_ASSETS_URI . '/scripts/vendor.js', ['simple-customizations-for-woocommerce/manifest.js'], $version, true);
+    wp_enqueue_script('simple-customizations-for-woocommerce/admin.js', SCW_ASSETS_URI . '/scripts/admin.js', ['simple-customizations-for-woocommerce/manifest.js'], $version, true);
 
-    wp_localize_script('simple-woocommerce/admin.js', 'swc', [
+    wp_localize_script('simple-customizations-for-woocommerce/admin.js', 'swc', [
       'ajax' => admin_url('admin-ajax.php')
     ]);
   }
 
   /**
-   * @filter plugin_action_links_simple-woocommerce/simple-woocommerce.php
+   * @filter plugin_action_links_simple-customizations-for-woocommerce/simple-customizations-for-woocommerce.php
    */
   public function settingsLink($links)
   {
@@ -61,7 +61,7 @@ class Config
         ],
         get_admin_url() . 'admin.php'
     ));
-    $settings_link = "<a href='$url'>" . __('Settings', 'simple-woocommerce') . '</a>';
+    $settings_link = "<a href='$url'>" . __('Settings', 'simple-customizations-for-woocommerce') . '</a>';
     array_push(
         $links,
         $settings_link

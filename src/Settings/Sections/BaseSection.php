@@ -1,6 +1,6 @@
 <?php
 
-namespace SimpleWooCommerce\Settings\Sections;
+namespace SimpleCustomizationsForWooCommerce\Settings\Sections;
 
 abstract class BaseSection implements SectionAccess
 {
@@ -95,8 +95,8 @@ abstract class BaseSection implements SectionAccess
     return $this->addField($title, $id, wp_parse_args($args, [
       'type' => 'radio',
       'options' => [
-        'yes' => __('Yes', 'simple-woocommerce'),
-        'no' => __('No', 'simple-woocommerce'),
+        'yes' => __('Yes', 'simple-customizations-for-woocommerce'),
+        'no' => __('No', 'simple-customizations-for-woocommerce'),
       ],
     ]));
   }

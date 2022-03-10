@@ -1,10 +1,10 @@
 <?php
 
-namespace SimpleWooCommerce\Settings;
+namespace SimpleCustomizationsForWooCommerce\Settings;
 
-use SimpleWooCommerce\Settings\Sections\SectionAccess;
-use SimpleWooCommerce\Settings\Sections\General as GeneralSection;
-use SimpleWooCommerce\Settings\Sections\Sample;
+use SimpleCustomizationsForWooCommerce\Settings\Sections\SectionAccess;
+use SimpleCustomizationsForWooCommerce\Settings\Sections\General as GeneralSection;
+use SimpleCustomizationsForWooCommerce\Settings\Sections\Sample;
 
 class Page extends \WC_Settings_Page
 {
@@ -13,7 +13,7 @@ class Page extends \WC_Settings_Page
   public function __construct()
   {
     $this->id = 'swc';
-    $this->label = 'Simple WooCommerce';
+    $this->label = 'Simple Customizations for WooCommerce';
     $this->sections = [
       'general' => new GeneralSection(),
     ];

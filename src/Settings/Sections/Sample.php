@@ -1,8 +1,8 @@
 <?php
 
-namespace SimpleWooCommerce\Settings\Sections;
+namespace SimpleCustomizationsForWooCommerce\Settings\Sections;
 
-use SimpleWooCommerce\Settings\Sections\BaseSection;
+use SimpleCustomizationsForWooCommerce\Settings\Sections\BaseSection;
 
 class Sample extends BaseSection
 {
@@ -10,10 +10,10 @@ class Sample extends BaseSection
   {
     $this
       ->startGroup('Sample')
-        ->addCheckbox(__('Checkbox', 'simple-woocommerce'), 'checkboxid')
-        ->addTextInput(__('Text', 'simple-woocommerce'), 'textid')
-        ->addNumberInput(__('Number', 'simple-woocommerce'), 'numberid')
-        ->addSelectInput(__('Select', 'simple-woocommerce'), 'selectid')
+        ->addCheckbox(__('Checkbox', 'simple-customizations-for-woocommerce'), 'checkboxid')
+        ->addTextInput(__('Text', 'simple-customizations-for-woocommerce'), 'textid')
+        ->addNumberInput(__('Number', 'simple-customizations-for-woocommerce'), 'numberid')
+        ->addSelectInput(__('Select', 'simple-customizations-for-woocommerce'), 'selectid')
       ->endGroup('Sample');
   }
 
@@ -24,6 +24,6 @@ class Sample extends BaseSection
 
   public function getLabel(): string
   {
-    return __('Sample', 'simple-woocommerce');
+    return __('Sample', 'simple-customizations-for-woocommerce');
   }
 }

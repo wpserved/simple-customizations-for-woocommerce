@@ -1,9 +1,9 @@
 <?php
 
-namespace SimpleWooCommerce\Settings;
+namespace SimpleCustomizationsForWooCommerce\Settings;
 
-use SimpleWooCommerce\Settings\Fields\Toggle;
-use SimpleWooCommerce\Settings\Page;
+use SimpleCustomizationsForWooCommerce\Settings\Fields\Toggle;
+use SimpleCustomizationsForWooCommerce\Settings\Page;
 
 class Settings
 {
